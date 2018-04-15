@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.thali.myproject1404.MainActivity">
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:hint="@string/hint_name"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnActivityTwo"
+        android:text="@string/btn_act_two"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnActivityThree"
+        android:text="@string/btn_act_three"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/TVDataHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_here"
+        android:textStyle="bold|italic"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

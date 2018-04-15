@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ExplicitIntents</string>
+    <string name="hint_name">Please enter your name</string>
+
+    <!--Button-->
+
+
+    <string name="btn_act_two">activity 2</string>
+    <string name="btn_act_three">activity 3</string>
+
+    <string name="data_here">Data from Activity 3 will be displayed here</string>
+
+    <!--Activity 2-->
+
+    <string name="welcometo">Welcome to Activity 2</string>
+
+    <!--Activity 3-->
+    <string name="please_enter_surname">Please enter your surname</string>
+
+    <string name="submit">Submit</string>
+</resources>
