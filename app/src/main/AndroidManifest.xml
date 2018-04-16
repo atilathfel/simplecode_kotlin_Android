@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.thali.intentsval.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ThreeActivity"></activity>
-        <activity android:name=".TwoActivity"></activity>
+        <activity android:name="com.example.thali.intentsval.ThreeActivity" android:label="@string/label_act_three"></activity>
+        <activity android:name="com.example.thali.intentsval.TwoActivity" android:label="@string/label_act_two"></activity>
     </application>
 
 </manifest>

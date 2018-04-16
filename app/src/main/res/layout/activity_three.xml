@@ -5,26 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.thali.myproject1404.ThreeActivity">
+    android:background="#D1C4E9"
+    tools:context="com.example.thali.intentsval.ThreeActivity">
+
 
     <EditText
-        android:id="@+id/ETSurname"
+        android:id="@+id/ETSobrenome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="#9162e4"
         android:gravity="center"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
+        android:hint="@string/digite_sobrenome_hint"
         android:inputType="textPersonName"
-        android:hint="@string/please_enter_surname" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
 
     <Button
-        android:id="@+id/BtnSubmit"
+        android:id="@+id/BtnOk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/submit"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:background="@drawable/button_style"
+        android:text="@string/btn_okay"
         android:textColor="#FFFF"
-        android:background="@color/colorPrimary"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
+
+
 </LinearLayout>

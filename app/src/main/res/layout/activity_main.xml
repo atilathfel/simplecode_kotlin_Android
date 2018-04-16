@@ -5,52 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.thali.myproject1404.MainActivity">
+    android:background="#D1C4E9"
+    tools:context="com.example.thali.intentsval.MainActivity">
 
     <EditText
-        android:id="@+id/ETName"
+        android:id="@+id/ETNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="13dp"
-        android:textSize="18sp"
         android:gravity="center"
-        android:hint="@string/hint_name"
-        android:layout_marginBottom="10dp"/>
-
+        android:hint="@string/digite_nome_hint"
+        android:textSize="18sp"
+        android:textColorHint="#9162e4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
 
 
     <Button
         android:id="@+id/btnActivityTwo"
-        android:text="@string/btn_act_two"
         android:layout_width="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/btn_act_two"
         android:textColor="#ffffff"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
 
     <Button
         android:id="@+id/btnActivityThree"
-        android:text="@string/btn_act_three"
         android:layout_width="match_parent"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/btn_act_three"
         android:textColor="#ffffff"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+         />
 
     <TextView
         android:id="@+id/TVDataHere"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
         android:text="@string/data_here"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
-        android:textSize="18sp" />
+         />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/btn_clear"
+        android:textColor="#ffffff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        />
 
 </LinearLayout>

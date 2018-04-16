@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="#D1C4E9"
+    android:orientation="vertical"
+    tools:context="com.example.thali.intentsval.TwoActivity">
 
     <TextView
-        android:id="@+id/TVWelcome"
+        android:id="@+id/TVBemVindo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/welcometo"
-        android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginLeft="15dp"
-        android:textSize="18sp" />
+        android:text="@string/bem_vindo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="80dp"
+        />
+
+    <Button
+        android:id="@+id/BtnVoltar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/button_style"
+        android:text="@string/btn_voltar"
+        android:textColor="#FFFF" />
 
 </LinearLayout>
