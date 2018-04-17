@@ -3,8 +3,6 @@ package com.example.thali.intentsval
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -21,11 +19,18 @@ class ThreeActivity : AppCompatActivity() , View.OnClickListener{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_three)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
         btnOK.setOnClickListener(this)
 
 
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     override fun onClick(v: View?) {
@@ -43,17 +48,5 @@ class ThreeActivity : AppCompatActivity() , View.OnClickListener{
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main,menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        val id = item?.itemId
-        if (id == R.id.action_back) {
-            val intent = Intent(this@ThreeActivity, MainActivity::class.java)
-            startActivity(intent)
-        }
-        return super.onOptionsItemSelected(item)
-    }
+   
 }
