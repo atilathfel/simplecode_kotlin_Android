@@ -6,9 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.example.thali.myproject1404.R
 
-/**
- * Created by thali on 14/04/2018.
- */
+
 class TwoActivity : AppCompatActivity() {
 
     private val TVBemVindo by lazy { findViewById<TextView>(R.id.TVBemVindo) }

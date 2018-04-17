@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         btnActivityTwo.setOnClickListener {
             val nome: String = etNome.text.toString().trim()
 
-            if (!etNome.text.toString().trim().equals("") ) {
+            if (!TextUtils.isEmpty(ETNome.text.toString().trim()) ) {
 
 
                 val intentTwo = Intent(this@MainActivity, TwoActivity::class.java)
@@ -49,9 +50,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnActivityThree.setOnClickListener {
-            val intentThree = Intent(this@MainActivity, ThreeActivity::class.java)
-            startActivityForResult(intentThree, THIRD_ACTIVITY)
+            if (!TextUtils.isEmpty(ETNome.text.toString().trim())) {
 
+                val intentThree = Intent(this@MainActivity, ThreeActivity::class.java)
+                startActivityForResult(intentThree, THIRD_ACTIVITY)
+            }else{
+                Toast.makeText(this,"Por favor, Primeiramente Digite Seu Nome",Toast.LENGTH_LONG).show()
+            }
         }
 
         btnClear.setOnClickListener {
