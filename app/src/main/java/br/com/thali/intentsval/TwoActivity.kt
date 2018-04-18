@@ -15,7 +15,7 @@ class TwoActivity : AppCompatActivity() {
     lateinit var TVBemVindo : TextView
 
     @BindView(R.id.BtnVoltar)
-    lateinit var btnVoltar : Button
+    lateinit var BtnVoltar : Button
 
 
 
@@ -32,7 +32,6 @@ class TwoActivity : AppCompatActivity() {
     }
 
     private fun getStringExtra() {
-        //val editNome by lazy { intent.getStringExtra("nome") }
         var editNome = intent.getStringExtra("nome")
         TVBemVindo.setText( getString(R.string.bem_vindo) + editNome)
     }

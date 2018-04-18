@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
      lateinit var etNome:EditText
 
     @BindView(R.id.btnActivityTwo)
-     lateinit var btnActivity: Button
+     lateinit var btnActivityTwo: Button
 
     @BindView(R.id.btnActivityThree)
      lateinit var btnActivityThree : Button

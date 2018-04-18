@@ -13,8 +13,6 @@ import butterknife.OnClick
 
 class ThreeActivity : AppCompatActivity(){
 
-    /*private val ETSobrenome by lazy { findViewById<EditText>(R.id.ETSobrenome) }
-    private val btnOK by lazy { findViewById<Button>(R.id.BtnOk) }*/
 
     @BindView(R.id.ETSobrenome)
     lateinit var ETSobrenome : EditText
