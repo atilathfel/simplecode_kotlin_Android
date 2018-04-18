@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#D1C4E9"
-    tools:context="com.example.thali.intentsval.ThreeActivity">
+    tools:context="br.com.thali.intentsval.ThreeActivity">
 
 
     <EditText

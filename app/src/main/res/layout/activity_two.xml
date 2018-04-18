@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#D1C4E9"
     android:orientation="vertical"
-    tools:context="com.example.thali.intentsval.TwoActivity">
+    tools:context="br.com.thali.intentsval.TwoActivity">
 
     <TextView
         android:id="@+id/TVBemVindo"

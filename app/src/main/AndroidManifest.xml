@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.thali.myproject1404">
+    package="br.com.thali.intentsval">
 
     <application
         android:allowBackup="true"
@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.thali.intentsval.MainActivity">
+        <activity android:name="br.com.thali.intentsval.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.thali.intentsval.ThreeActivity" android:label="@string/label_act_three"></activity>
-        <activity android:name="com.example.thali.intentsval.TwoActivity" android:label="@string/label_act_two"></activity>
+        <activity android:name="br.com.thali.intentsval.ThreeActivity" android:label="@string/label_act_three"></activity>
+        <activity android:name="br.com.thali.intentsval.TwoActivity" android:label="@string/label_act_two"></activity>
     </application>
 
 </manifest>

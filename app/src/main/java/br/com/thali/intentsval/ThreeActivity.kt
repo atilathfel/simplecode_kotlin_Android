@@ -1,29 +1,34 @@
-package com.example.thali.intentsval
+package br.com.thali.intentsval
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.thali.myproject1404.R
+import butterknife.BindView
+import butterknife.ButterKnife
+import butterknife.OnClick
 
-class ThreeActivity : AppCompatActivity() , View.OnClickListener{
 
-    private val ETSobrenome by lazy { findViewById<EditText>(R.id.ETSobrenome) }
-    private val btnOK by lazy { findViewById<Button>(R.id.BtnOk) }
+class ThreeActivity : AppCompatActivity(){
+
+    /*private val ETSobrenome by lazy { findViewById<EditText>(R.id.ETSobrenome) }
+    private val btnOK by lazy { findViewById<Button>(R.id.BtnOk) }*/
+
+    @BindView(R.id.ETSobrenome)
+    lateinit var ETSobrenome : EditText
+
+    @BindView(R.id.BtnOk)
+    lateinit var BtnOk : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_three)
+        ButterKnife.bind(this)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-
-        btnOK.setOnClickListener(this)
-
 
 
     }
@@ -33,7 +38,8 @@ class ThreeActivity : AppCompatActivity() , View.OnClickListener{
         return true
     }
 
-    override fun onClick(v: View?) {
+    @OnClick(R.id.BtnOk)
+    fun OnClickBtnOk() {
         val sobrenome : String = ETSobrenome.text.toString().trim()
 
         if (!ETSobrenome.text.toString().trim().equals("")) {
@@ -47,6 +53,8 @@ class ThreeActivity : AppCompatActivity() , View.OnClickListener{
             Toast.makeText(this,"Por favor,Digite Seu Sobrenome!!!",Toast.LENGTH_LONG).show()
         }
     }
+
+
 
 
 }

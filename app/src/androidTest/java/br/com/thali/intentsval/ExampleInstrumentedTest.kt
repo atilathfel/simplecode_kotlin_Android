@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.example.thali.myproject1404", appContext.packageName)
+        assertEquals("br.com.thali.intentsval", appContext.packageName)
     }
 }
